@@ -1,0 +1,78 @@
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+button#erase-button{
+    background-color: rgb(22, 78, 151);
+    color:white;
+    font-weight: bold;
+    border-radius: 7px;
+    font-size: 28px;
+    height:80px;
+    width:150px;
+}
+
+button#change-grid{
+    background-color: rgb(204, 19, 19);
+    color:white;
+    font-weight: bold;
+    border-radius: 7px;
+    font-size: 28px;
+    height:80px;
+    width:150px;
+}
+
+button#black-mode{
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    border-radius: 7px;
+    font-size: 28px;
+    height:80px;
+    width:150px;
+}
+
+button#color-mode{
+    background-color: purple;
+    color:white;
+    font-weight: bold;
+    border-radius: 7px;
+    font-size: 28px;
+    height:80px;
+    width:150px;
+}
+
+#container-grid{
+    display: grid;
+    width: 800px;
+    height: 800px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.gridRow { 
+    display: flex;
+    font-size: 9.5px; 
+    text-align: center; 
+    color: red 
+}
+
+.grid-element { 
+    border: 1px solid black;
+    background-color: white;
+    user-select: none;
+
+}
+
