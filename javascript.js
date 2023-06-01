@@ -2,6 +2,7 @@ let container = document.getElementById("container-grid");
 let rows = document.getElementsByClassName("gridRow");
 const grid = document.getElementById('container-grid');
 let currentMode='classic';
+let cells = document.querySelectorAll('.grid-element');
 
 
 function customGrid(m){
@@ -13,7 +14,7 @@ function customGrid(m){
         gridElement.classList.add('grid-element')
         grid.appendChild(gridElement)
     }
-    let cells = document.querySelectorAll('.grid-element');
+    cells = document.querySelectorAll('.grid-element');
     cells.forEach(cell => cell.addEventListener('mouseover',(evt) => setCellsColor(evt), false));
 }
    
@@ -61,3 +62,4 @@ document.getElementById('black-mode').addEventListener('click',classicMode,false
 document.getElementById('color-mode').addEventListener('click',rainbowMode,false);
 
 console.log(document.getElementsByClassName("cell"))
+console.log(cells)
